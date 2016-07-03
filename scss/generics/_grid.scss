@@ -1,0 +1,93 @@
+// This file contains a bunch of vendor prefixes that need to be used in a
+// specific order for the sake of Safari.
+// scss-lint:disable VendorPrefix PropertySortOrder
+
+$_use-old-spec: false;
+$_cols: $cfg-grid-cols;
+
+@mixin _grid-item {
+  @include space(xs, inner, x, null, rem);
+
+  @if $_use-old-spec {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+  }
+
+  box-sizing: border-box;
+}
+
+.grid {
+
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    @include space(sm, outer, x, null, rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &--gutterless {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    & & {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  &__item {
+
+    @include _grid-item;
+    flex: 1;
+
+    &--gutterless {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+  }
+
+  @each $breakpoint, $grid-width in $cfg-breakpoints {
+
+    @include breakpoint(#{$breakpoint}) {
+
+      &--non-fluid {
+        margin: 0 auto;
+        max-width: $grid-width;
+      }
+
+      @for $i from 1 through $_cols {
+
+        $_width: unquote('#{100 / $_cols * $i}%');
+
+        &__item--#{$breakpoint}-#{$i} {
+          @include _grid-item;
+
+          @if $_use-old-spec {
+            -webkit-flex-basis: $_width;
+            -ms-flex-preferred-size: $_width;
+          }
+
+          flex: 0 0 auto;
+          flex-basis: $_width;
+          max-width: $_width;
+        }
+
+        &__item--#{$breakpoint}-push-#{$i} {
+          margin-left: $_width;
+        }
+
+      }
+    }
+  }
+
+}

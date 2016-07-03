@@ -1,0 +1,28 @@
+@mixin space($size, $type, $direction: null, $negative: null, $rem: null) {
+
+  $_property: if($type == 'outer', 'margin', 'padding');
+  $_space: map-get($cfg-spacing, $size);
+  $_result-space: em($_space);
+
+  @if $rem == 'rem' {
+    $_result-space: rem($_space);
+  }
+
+  @if $negative == 'negative'  {
+    @if $_property == 'padding' {
+      @error 'Cannot use negative length on padding.';
+    } @else if $_property == 'margin' {
+      $_result-space: -$_result-space;
+    }
+  }
+
+  @if $direction == null {
+    #{$_property}: $_space;
+  } @else {
+    @if($direction == 'top' or $direction == 'y')    { #{$_property}-top: $_result-space; }
+    @if($direction == 'bottom' or $direction == 'y') { #{$_property}-bottom: $_result-space; }
+    @if($direction == 'left' or $direction == 'x')   { #{$_property}-left: $_result-space; }
+    @if($direction == 'right' or $direction == 'x')  { #{$_property}-right: $_result-space; }
+  }
+
+}

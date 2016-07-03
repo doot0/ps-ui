@@ -1,0 +1,14 @@
+@mixin breakpoint($size) {
+
+  @if map-has-key($cfg-breakpoints, $size) {
+
+    @media (min-width: map-get($cfg-breakpoints, $size)) {
+      @content;
+    }
+
+  } @else {
+    @warn 'No breakpoint exists for size "#{$size}".';
+    @warn 'Available breakpoints are: #{map-keys($cfg-breakpoints)}.';
+  }
+
+}

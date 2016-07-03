@@ -1,0 +1,62 @@
+// ============================================================================
+//                                                    ┌─┐┌─┐┌┬┐┌─┐┌─┐┌─┐┌─┐
+//   VARIABLES                                     {  │  │ ││││├─┘├─┤│ ┬│ │ }
+//                                                    └─┘└─┘┴ ┴┴  ┴ ┴└─┘└─┘
+// ============================================================================
+
+$cfg-base-font-px: 14;
+
+$cfg-palette: (
+  'brand'          : #7443bf,
+  'primary'        : #439be5,
+  'lightest'       : #f9fbfd,
+  'lighter'        : #f2f6f9,
+  'light'          : #e4eaf1,
+  'dark'           : #a4adb5,
+  'darker'         : #5a646f,
+  'darkest'        : #3d4752,
+  'positive'       : #2fdf6b,
+  'attention'      : #ecbd0b,
+  'negative'       : #f1575f,
+  'form-positive'  : #c2ecda,
+  'form-attention' : #f7e6ce,
+  'form-negative'  : #fbd6d8
+);
+
+$cfg-spacing: (
+  'xs' : 5px,
+  'sm' : 10px,
+  'md' : 20px,
+  'lg' : 40px,
+  'xl' : 80px
+);
+
+$cfg-breakpoints: (
+  'xs' : 10em,
+  'sm' : 20em,
+  'md' : 30em,
+  'lg' : 48em,
+  'xl' : 70em
+);
+
+$cfg-grid-cols: 12;
+
+$cfg-fonts: (
+  'body' : (Noto Sans, sans-serif)
+);
+
+$cfg-font-sizes: (
+  'xs' : 12px,
+  'sm' : 14px,
+  'md' : 16px,
+  'lg' : 18px,
+  'xl' : 20px
+);
+
+$cfg-z-indexes: (
+  'INT_MAX'            :  2147483647,
+  'default'            :  1,
+  'reset'              :  0,
+  'lower'              : -1,
+  'lowest'             : -10
+);
