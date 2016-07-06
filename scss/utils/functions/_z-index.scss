@@ -1,0 +1,10 @@
+@function z-index($name) {
+
+  @if map-has-key($cfg-z-indexes, $name) {
+    @return map-get($cfg-z-indexes, $name);
+  } @else {
+    @warn 'No z-indexes exist for size #{$name}.';
+    @warn 'Exisiting z-indexes are #{map-keys($cfg-z-indexes)}';
+  }
+
+}

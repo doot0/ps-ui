@@ -1,0 +1,11 @@
+@mixin size($width, $height: $width, $rems: '') {
+
+  @if $rems == 'rem' {
+    height: rem($height);
+    width: rem($width);
+  } @else {
+    height: em($height);
+    width: em($width);
+  }
+
+}

@@ -1,0 +1,37 @@
+$_spaces: $cfg-spacing;
+$_directions: ('top', 'bottom', 'left', 'right');
+$_types: ('margin', 'padding');
+
+.a-space {
+
+  @each $size, $spacing in $_spaces {
+
+    @each $type in $_types {
+      $short-type: str-slice($type, 0, 1);
+
+      &--#{$size}-#{$short-type} {
+        #{$type}: rem($spacing);
+      }
+
+      &--#{$size}-#{$short-type}-x {
+        #{$type}: 0 rem($spacing);
+      }
+
+      &--#{$size}-#{$short-type}-y {
+        #{$type}: rem($spacing) 0;
+      }
+
+      @each $direction in $_directions {
+        $short-dir: str-slice($direction, 0, 1);
+
+        &--#{$size}-#{$short-type}#{$short-dir} {
+          #{$type}-#{$direction}: rem($spacing);
+        }
+
+      }
+
+    }
+
+  }
+
+}

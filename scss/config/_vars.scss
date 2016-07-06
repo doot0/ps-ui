@@ -20,7 +20,8 @@ $cfg-palette: (
   'negative'       : #f1575f,
   'form-positive'  : #c2ecda,
   'form-attention' : #f7e6ce,
-  'form-negative'  : #fbd6d8
+  'form-negative'  : #fbd6d8,
+  'white'          : #ffffff
 );
 
 $cfg-spacing: (
@@ -55,6 +56,7 @@ $cfg-font-sizes: (
 
 $cfg-z-indexes: (
   'INT_MAX'            :  2147483647,
+  'header'             :  500,
   'default'            :  1,
   'reset'              :  0,
   'lower'              : -1,

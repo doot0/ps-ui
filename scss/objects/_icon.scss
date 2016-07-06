@@ -1,0 +1,28 @@
+// Icons
+//
+// Icons at different sizings
+//
+// Markup: _icon.html
+//
+// Styleguide: Objects.icons
+
+.o-icon {
+  @include size(24px);
+
+  &--xs {
+    @include size(16px);
+  }
+
+  &--md {
+    @include size(32px);
+  }
+
+  &--lg {
+    @include size(48px);
+  }
+
+  &--xl {
+    @include size(64px);
+  }
+
+}

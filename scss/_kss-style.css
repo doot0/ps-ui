@@ -1,0 +1,174 @@
+.kss-style{
+  font-family: 'Noto Sans';
+}
+
+.kss-style h1,
+.kss-style h2,
+.kss-style h3,
+.kss-style h4,
+.kss-style h5,
+.kss-style h6 {
+  font-family: 'Noto Sans';
+  font-weight: 300;
+}
+
+.kss-style a,
+.kss-style a:visited {
+  color: #439BE5;
+}
+
+#kss-node {
+  color: #3D4752;
+  padding: 0;
+}
+
+.kss-sidebar.kss-style {
+  padding: 10px;
+}
+
+#kss-node .kss-nav__menu {
+  margin-bottom: 0;
+}
+
+@media and (min-width: 769px) {
+  #kss-node {
+    padding: 0 10px;
+  }
+
+}
+
+#kss-node .kss-sidebar {
+  background: #3D4752;
+  box-shadow: none;
+}
+
+#kss-node .kss-doc-title {
+  font-size: 1.2em;
+  vertical-align: middle;
+  display: inline-block;
+  color: #fff;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+#kss-node .kss-doc-title:before {
+  vertical-align: middle;
+  content: '';
+  background: url(https://pathship.com/assets/home/0.0.1/img/icons/pathship.svg);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+#kss-node .kss-nav__menu-link.is-in-viewport:before {
+  background-color: #439BE5;
+  left: -30px !important;
+  transition: background-color .2s, width .3s;
+}
+
+#kss-node .kss-nav__menu-item {
+  padding: 5px 0 5px;
+}
+
+#kss-node .kss-nav__ref {
+  color: #E4EAF1;
+}
+
+#kss-node .kss-nav__menu-child li {
+  border-color: #475765 !important;
+  padding: 10px !important;
+}
+
+#kss-node .kss-modifier__heading{
+  background: #3D4752;
+  color: #fff;
+  border-bottom: 0;
+}
+
+#kss-node .kss-modifier__wrapper {
+  border-color: #475765;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+#kss-node .kss-title__ref {
+  line-height: inherit;
+}
+
+#kss-node .kss-section {
+  /*max-width: 100%;*/
+  padding: 0 10px;
+}
+
+.kss-style pre,
+.kss-style code,
+.kss-style kbd,
+.kss-style samp {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#kss-node ol.linenums li {
+  border-bottom: 1px solid rgba(66, 66, 66, 0.1);
+  background: #454c54;
+}
+
+#kss-node ol.linenums li.L0,
+#kss-node ol.linenums li.L2,
+#kss-node ol.linenums li.L4,
+#kss-node ol.linenums li.L6,
+#kss-node ol.linenums li.L8 {
+  background: #3d4752;
+}
+
+.kss-source code {
+  padding: 1ch;
+  background: #3D4752;
+  border-radius: 4px;
+  color: #f3f3f3;
+}
+
+#kss-node .pln {
+  color: #fff;
+}
+
+#kss-node .tag {
+  color: #9797ff;
+}
+
+#kss-node .atv {
+  color: #d0d4d0;
+}
+
+#kss-node .pun,
+#kss-node .opn,
+#kss-node .clo {
+  color: #b96262;
+}
+
+#kss-node .atn {
+  color: #9a76d1;
+}
+
+#kss-node .com {
+  color: #a99595;
+}
+
+#kss-node .kss-markup{
+  background: #3D4752;
+}
+
+.kss-style pre {
+  background: #3D4752;
+  padding: 10px;
+}
+
+.kss-style pre code {
+  color: #fff;
+}
+
+body {
+  font-size: 14px;
+}

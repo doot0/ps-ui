@@ -1,0 +1,11 @@
+{
+  "source": "./",
+  "destination": "../styleguide",
+  "css": [
+    "../html/app.css",
+    "../scss/_kss-style.css"
+  ],
+  "js": [],
+  "title": "Component Library",
+  "homepage": "./_styleguide-home.md"
+}

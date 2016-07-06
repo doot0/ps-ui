@@ -1,0 +1,38 @@
+// Header
+//
+// App header
+//
+// Markup: _header.html
+//
+// Styleguide: Components.header
+.c-header {
+
+  @include space(sm, inner, x, null, rem);
+
+  align-content: center;
+  background: get-color('white');
+  border-bottom: get-color('light') 1px solid;
+  display: flex;
+  height: em(48);
+  justify-content: center;
+  z-index: z-index('header');
+
+  &__left {
+    align-self: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  &__center {
+    align-self: center;
+  }
+
+  &__right {
+    align-self: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+}

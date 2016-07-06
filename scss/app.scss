@@ -38,7 +38,22 @@
 'utils/functions/get-color',
 'utils/functions/em',
 'utils/functions/rem',
+'utils/functions/z-index',
+'utils/mixins/position',
+'utils/mixins/transform-align',
 'utils/mixins/space',
+'utils/mixins/size',
 'utils/mixins/breakpoint',
 'generics/reset',
-'generics/grid';
+'generics/reset-extras',
+'generics/grid',
+'base/hr',
+'atomics/color',
+// 'atomics/space';
+'objects/icon',
+'objects/media',
+'objects/list-inline',
+'objects/list-bare',
+'components/avatar',
+'components/avatar-group',
+'components/header';

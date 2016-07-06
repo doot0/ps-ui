@@ -1,0 +1,13 @@
+// Bare list
+//
+// Removes the default formatting from a list.
+//
+// Markup: _list-bare.html
+//
+// Styleguide: Objects.list-bare
+//
+.o-list-bare {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

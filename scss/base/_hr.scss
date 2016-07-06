@@ -1,0 +1,5 @@
+hr {
+  @include space(sm, outer, y, null, rem);
+  border: 0;
+  border-bottom: get-color('light') 1px solid;
+}

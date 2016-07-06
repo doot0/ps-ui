@@ -1,0 +1,37 @@
+// Media object
+//
+// Used to present a place of user focus (usually an image) with some neighbouring text.
+//
+// Markup: _media.html
+//
+// Styleguide: Objects.media
+
+.o-media {
+  display: flex;
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__figure {
+    font-size: 0; // fix for non-image wrappers
+
+    &--pad-right {
+      @include space(sm, outer, right, null, rem);
+    }
+
+    &--pad-left {
+      @include space(sm, outer, left, null, rem);
+    }
+
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+}

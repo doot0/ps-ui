@@ -1,0 +1,13 @@
+@mixin transform-align($axis: '') {
+
+  position: absolute;
+
+  @if($axis == 'x' or $axis == '') { left: 50%; }
+  @if($axis == 'y' or $axis == '') { top: 50%; }
+
+  @if $axis == 'x' { transform: translateX(-50%); }
+  @if $axis == 'y' { transform: translateY(-50%); }
+
+  @if $axis == ''  { transform: translate(-50%, -50%); }
+
+}

@@ -1,0 +1,20 @@
+// Inline list
+//
+// Aligns list items horizontally. Optionally makes them scrollable.
+//
+// Markup: _list-inline.html
+//
+// Styleguide: Objects.list-inline
+
+.o-list-inline {
+
+  > li {
+    display: inline-block;
+  }
+
+  &--scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+}

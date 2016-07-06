@@ -1,0 +1,16 @@
+// Avatar group
+//
+// Avatar group style
+//
+// Markup: _avatar-group.html
+//
+// Styleguide: Components.avatar-group
+
+.c-avatar-group {
+  display: flex;
+
+  .c-avatar + .c-avatar {
+    margin-left: -2em;
+  }
+
+}

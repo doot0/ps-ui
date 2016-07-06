@@ -1,0 +1,153 @@
+// Avatar
+//
+// Multi-purpose, all-powerful, all-singing all-dancing avatar component
+//
+// Markup: _avatar.html
+//
+// Styleguide: Components.avatar
+
+.c-avatar {
+  @include size(48px);
+  border-radius: 48em;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    @include transform-align();
+    content: attr(data-initials);
+    font-weight: bold;
+  }
+
+  &--sm { @include size(32px)  }
+  &--lg { @include size(64px)  }
+  &--xl { @include size(128px) }
+
+  &--border {
+    border: 2px solid currentColor;
+  }
+
+  &__fig-wrapper {
+    @include absolute(0, 0, 0, 0);
+    border-radius: inherit;
+    overflow: hidden;
+  }
+
+  &__pic {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    &--outline {
+      outline: 2px solid currentColor;
+
+      // Disabling nesting rules here so image outlines don't ever overlap.
+      // Reversing z-index order is a clean way of doing it.
+      //scss-lint:disable NestingDepth
+      &:nth-child(1) { z-index: 4; }
+      &:nth-child(2) { z-index: 3; }
+      &:nth-child(3) { z-index: 2; }
+      &:nth-child(4) { z-index: 1; }
+      //scss-lint:enable NestingDepth
+
+    }
+
+    &--half {
+      height: 100%;
+      width: 50%;
+    }
+
+    &--quarter {
+      height: 50%;
+      width: 50%;
+    }
+
+    &--left {
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      top: 0;
+    }
+
+    &--right {
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      top: 0;
+    }
+
+    &--top-left {
+      bottom: 50%;
+      left: 0;
+      right: 50%;
+      top: 0;
+    }
+
+    &--top-right {
+      bottom: 50%;
+      left: 50%;
+      right: 0;
+      top: 0;
+    }
+
+    &--bottom-right {
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      top: 50%;
+    }
+
+    &--bottom-left {
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      top: 50%;
+    }
+
+  }
+
+  &__status {
+    background: currentColor;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    bottom: 0;
+    display: block;
+    height: 25%;
+    position: absolute;
+    right: 0;
+    width: 25%;
+    z-index: 20;
+
+    &--online {
+      background: get-color('positive');
+    }
+
+    &--away {
+      background: get-color('attention');
+    }
+
+    &--busy {
+      background: get-color('negative');
+    }
+
+  }
+
+  &__overlay {
+    @include absolute(0, 0, 0, 0);
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    &--inner {
+      @include transform-align();
+    }
+
+  }
+
+}
