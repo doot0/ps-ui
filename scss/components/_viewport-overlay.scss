@@ -1,0 +1,25 @@
+// Viewport overlay
+//
+// An overlay that always fills the whole viewport. Can contain any markup.
+// A modifier exists for when an overlay can fill the entire device's screen
+// which is `--fill-device`.
+//
+// Markup: _viewport-overlay.html
+//
+// Styleguide: Components.viewport-overlay
+.c-viewport-overlay {
+  @include absolute(0, 0, 0, 0);
+  background-color: get-color('white');
+  z-index: z-index('viewport-overlay');
+
+  &--transparent {
+    backdrop-filter: blur(5px);
+    background-color: get-color('white', .9);
+  }
+
+  &--fill-device {
+    width: 100vw;
+    height: 100vh;
+  }
+
+}

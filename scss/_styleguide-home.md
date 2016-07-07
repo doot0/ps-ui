@@ -2,8 +2,7 @@
 
 > Currently maintained by [dave@pathship.com](mailto:dave@pathship.com)
 
-If anything is missing from here or you're unsure of how to implement a given
-component, ping me on Slack (@dave).
+If anything is missing from here or you're unsure of how to implement a given component, ping me on Slack: [<img style="border-radius:4px" width="24" src="https://avatars.slack-edge.com/2016-02-10/20898856694_78ce0d9d6e36739918e5_72.jpg"> @dave](https://pathship.slack.com/messages/@dave/)
 
 #### Docs
 

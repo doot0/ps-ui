@@ -162,7 +162,6 @@
 
 .kss-style pre {
   background: #3D4752;
-  padding: 10px;
 }
 
 .kss-style pre code {
@@ -171,4 +170,20 @@
 
 body {
   font-size: 14px;
+}
+
+.kss-modifier__example {
+  font-family: 'Noto Sans';
+  color: #5a646f;
+}
+
+.kss-overview pre {
+  padding: 10px;
+}
+
+.kss-description code {
+  background: #3D4752;
+  color: #fff;
+  padding: .5ch;
+  border-radius: 4px;
 }

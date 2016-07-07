@@ -1,0 +1,19 @@
+// Card
+//
+// Multi-purpose card component. Can contain nearly anything.
+//
+// Markup: _card.html
+//
+// Styleguide: Components.card
+.c-card {
+  background-color: get-color('white');
+  border: 1px solid get-color('light');
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 get-color('darkest', .1);
+  display: inline-block;
+
+  &--padded {
+    @include space(sm, inner, null, null, rem);
+  }
+
+}

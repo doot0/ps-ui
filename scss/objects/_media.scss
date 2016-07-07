@@ -18,7 +18,6 @@
   }
 
   &__figure {
-    font-size: 0; // fix for non-image wrappers
 
     &--pad-right {
       @include space(sm, outer, right, null, rem);

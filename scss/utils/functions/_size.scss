@@ -1,0 +1,10 @@
+@function size($size) {
+
+  @if map-has-key($cfg-spacing, $size) {
+    @return map-get($cfg-spacing, $size);
+  } @else {
+    @warn 'No UI sizes exist for size #{$size}.';
+    @warn 'Exisiting UI sizes are #{map-keys($cfg-spacing)}';
+  }
+
+}

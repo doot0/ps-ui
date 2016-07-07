@@ -56,6 +56,7 @@ $cfg-font-sizes: (
 
 $cfg-z-indexes: (
   'INT_MAX'            :  2147483647,
+  'viewport-overlay'   :  5000,
   'header'             :  500,
   'default'            :  1,
   'reset'              :  0,
