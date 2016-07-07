@@ -1,0 +1,23 @@
+// Button group
+//
+// Button group component.
+//
+// Markup: _button-group.html
+//
+// Styleguide: Components.button-group
+.c-btn-group {
+  display: flex;
+
+  > .c-btn {
+    border-radius: 0;
+  }
+
+  :first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  :last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+}

@@ -1,0 +1,39 @@
+// Button
+//
+// Button component.
+//
+// Markup: _button.html
+//
+// Styleguide: Components.button
+.c-btn {
+
+  @include space(sm, inner, null, null, rem);
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: visible;
+  text-align: center;
+  vertical-align: middle;
+
+  &--primary {
+    background-color: get-color('primary');
+    color: get-color('white');
+  }
+
+  &--secondary {
+    background-color: get-color('white');
+    border: 1px solid get-color('light');
+    color: get-color('dark');
+  }
+
+  &--disabled,
+  &[disabled] {
+    background-color: get-color('light');
+    color: get-color('dark');
+  }
+
+  &--rounded {
+    border-radius: 50%;
+  }
+
+}
