@@ -1,0 +1,23 @@
+// Display
+//
+// Namespace: `a-display`
+//
+// Markup: _display.html
+//
+// Styleguide: Atomics.display
+
+.a-display {
+
+  &--block {
+    display: block;
+  }
+
+  &--inline-block {
+    display: inline-block;
+  }
+
+  &--inline {
+    display: inline;
+  }
+
+}

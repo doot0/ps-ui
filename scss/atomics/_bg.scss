@@ -1,0 +1,18 @@
+// Background
+//
+// Namespace: `a-bg`
+//
+// Markup: _bg.html
+//
+// Styleguide: Atomics.background
+$_colours: $cfg-palette;
+
+.a-bg {
+
+  @each $color, $value in $_colors {
+    &--#{$color} {
+      background-color: $value;
+    }
+  }
+
+}
