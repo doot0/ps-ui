@@ -5,7 +5,7 @@
     "../html/app.css",
     "../scss/_kss-style.css"
   ],
-  "js": [],
+  "js": "../scss/_kss-script.js",
   "title": "Component Library",
   "homepage": "./_styleguide-home.md"
 }

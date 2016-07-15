@@ -1,5 +1,7 @@
 // Inline list
 //
+// Namespace: `o-list-inline`
+//
 // Aligns list items horizontally. Optionally makes them scrollable.
 //
 // Markup: _list-inline.html
@@ -15,6 +17,16 @@
   &--scrollable {
     overflow-x: auto;
     white-space: nowrap;
+  }
+
+  &--equal-fill {
+    display: flex;
+    justify-content: space-around;
+
+    > li {
+      flex: 1;
+    }
+
   }
 
 }

@@ -1,0 +1,34 @@
+// Token
+//
+// Namespace: `c-token`
+//
+// Tokens contain small amounts of data.
+//
+// Markup: _token.html
+//
+// Styleguide: Components.token
+.c-token {
+  @include space(sm, inner, x);
+  @include space(xs, inner, y);
+  background-color: get-color('primary');
+  border-radius: 4px;
+  color: get-color('white');
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+
+  > * {
+    display: inherit;
+    vertical-align: middle;
+  }
+
+  &__content {
+    font-size: .9em;
+  }
+
+  &__action {
+    color: currentColor;
+    fill: currentColor;
+  }
+
+}

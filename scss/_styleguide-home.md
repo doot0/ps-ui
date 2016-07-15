@@ -107,6 +107,8 @@ and extensibility in mind. Once you have authored an object, you should never
 modify the core styles related to it, as refactoring an object that is already
 widely used will most likely cause unexpected behaviour.
 
+An object should **never** rely on a [component](#components).
+
 You should only extend an object using a BEM modifier
 (`--` delimited classname). This way you can change the behaviour of an
 object class without worrying about it affecting the base object.
@@ -120,6 +122,8 @@ Components are bespoke, implementation-specific pieces of UI. In most cases,
 you should use component classes to structure the layout of a given piece of
 UI. Components can be used in conjunction with [atomics](#atomics) and
 [objects](#objects) to add context-specific modifications.
+
+Components may rely on objects for their composure.
 
 An example:
 

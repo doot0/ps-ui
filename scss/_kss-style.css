@@ -187,3 +187,21 @@ body {
   padding: .5ch;
   border-radius: 4px;
 }
+
+#kss-node .kss-modifier__wrapper {
+  padding: 0;
+}
+
+#kss-node .kss-modifier__heading {
+  margin: 0;
+}
+
+#kss-node .kss-modifier__example {
+  padding: 10px;
+  min-height: 10em;
+  overflow: hidden;
+}
+
+#kss-node .kss-modifier__example > .c-viewport-overlay {
+  position: absolute !important;
+}

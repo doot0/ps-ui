@@ -1,0 +1,48 @@
+// Type helpers
+//
+// Namespace: `a-type`
+//
+// These should be self-explanatory.
+//
+// Markup: _type.html
+//
+// Styleguide: Atomics.type
+.a-type {
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--font-inherit {
+    font-family: inherit;
+  }
+
+  &--size-inherit {
+    font-size: inherit;
+  }
+
+  &--decoration-none {
+    text-decoration: none;
+  }
+
+}

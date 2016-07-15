@@ -1,6 +1,12 @@
 // Avatar
 //
-// Multi-purpose, all-powerful, all-singing all-dancing avatar component
+// Namespace: `c-avatar`
+//
+// Multi-purpose, all-powerful, all-singing all-dancing avatar component.
+//
+// Modifiers:
+// - `--sm / --lg / --xl` - Size modifiers
+// - `--border` - Adds an outer border
 //
 // Markup: _avatar.html
 //
@@ -112,7 +118,6 @@
 
   &__status {
     background: currentColor;
-    border: 2px solid currentColor;
     border-radius: 50%;
     bottom: 0;
     display: block;
@@ -132,6 +137,10 @@
 
     &--busy {
       background: get-color('negative');
+    }
+
+    &--bordered {
+      border: 2px solid currentColor;
     }
 
   }

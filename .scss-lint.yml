@@ -23,8 +23,7 @@ linters:
     enabled: true
 
   Comment:
-    enabled: true
-    allowed: '\/\*[\s\S]*\n\!doc \*\/gm'
+    enabled: false
 
   DebugStatement:
     enabled: true
@@ -122,7 +121,7 @@ linters:
   PropertyCount:
     enabled: true
     include_nested: false
-    max_properties: 8 # this is liable to change in the future
+    max_properties: 10
 
   PropertySortOrder:
     enabled: true
@@ -130,15 +129,24 @@ linters:
 
   PropertySpelling:
     enabled: true
+    extra_properties:
+      - backdrop-filter
 
   PropertyUnits:
     enabled: true
     global: ['em', 'rem', '%']
     properties: # will be updated
       line-height: []
+      outline: ['px', 'em']
       border: ['px', 'em']
+      border-radius: ['px', 'em', '%']
       margin: ['em', 'rem']
       padding: ['em', 'rem']
+      height: ['vh', 'em', 'rem', 'px', '%']
+      width: ['vw', 'em', 'rem', 'px', '%']
+      max-height: ['vh', 'em', 'rem', 'px']
+      max-width: ['vw', 'em', 'rem', 'px']
+
 
   PsuedoElement:
     enabled: true
@@ -226,12 +234,7 @@ linters:
     enabled: true
 
   VariableForProperty:
-    enabled: true
-    properties:
-      - color
-      - font
-      - padding
-      - margin
+    enabled: false
 
   VendorPrefix:
     enabled: true

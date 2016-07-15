@@ -1,0 +1,47 @@
+// Padding resets
+//
+// Namespace: `i-padding-reset`
+//
+// Resets paddings to 0 for a given direction or axis. Available modifiers:
+// - `--top`
+// - `--left`
+// - `--bottom`
+// - `--right`
+// - `--x` for X axis
+// - `--y` for Y axis
+//
+// Markup: _padding-reset.html
+//
+// Styleguide: Immutables.padding-reset
+
+.i-padding-reset {
+
+  padding: 0 !important;
+
+  &--top {
+    padding-top: 0 !important;
+  }
+
+  &--left {
+    padding-left: 0 !important;
+  }
+
+  &--right {
+    padding-right: 0 !important;
+  }
+
+  &--bottom {
+    padding-bottom: 0 !important;
+  }
+
+  &--x {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  &--y {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+}

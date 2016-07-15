@@ -6,7 +6,7 @@
 <hr>
 
 <!-- Padded card with complex content -->
-<div class="c-card c-card--padded">
+<div class="c-card c-card--padded-sm">
   <div class="o-media o-media--align-center">
     <div class="o-media__figure o-media__figure--pad-right">
       <figure class="c-avatar c-avatar--border" data-initials="Bill">
@@ -29,6 +29,46 @@
           </span>
         </figure>
       </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Card with button + icon -->
+<div class="c-card c-card--padded-sm">
+  <div class="o-media o-media--align-center">
+    <svg class="o-media__figure o-media__figure--pad-right o-icon o-icon--lg a-fill--dark">
+      <use xlink:href="../scss/_meta/icons.svg#ic_search"/>
+    </svg>
+    <div class="o-media__content">
+      I am some text that prompts the user to perform an action.
+    </div>
+    <div class="o-media__figure o-media__figure--pad-left">
+      <div class="c-btn c-btn--primary c-btn--rounded">An action</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="c-card c-card--padded-md c-card--full">
+  <h4 class="a-heading--4 i-margin-reset">I am heading 4</h4>
+  <p class="a-heading__sub a-color--dark">I am a subheading</p>
+
+  <div class="a-space--md-m-y o-media o-media--align-center">
+    <svg class="o-media__figure o-media__figure--pad-right o-icon o-icon--sm a-fill--primary">
+      <use xlink:href="../scss/_meta/icons.svg#ic_search"/>
+    </svg>
+    <div class="o-media__content">Example accompanying text for icon</div>
+  </div>
+
+  <a href="#">I am a link</a>
+
+  <div class="a-clearfix a-space--sm-mt">
+    <div class="a-float--right">
+      <div class="c-btn c-btn--secondary">I am button</div>
+      <div class="c-btn c-btn--primary">I am button</div>
     </div>
   </div>
 </div>

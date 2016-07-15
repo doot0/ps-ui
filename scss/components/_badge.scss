@@ -1,0 +1,30 @@
+// Badge
+//
+// Namespace: `c-badge`
+//
+// Normally contain notification numbers etc.
+//
+// Markup: _badge.html
+//
+// Styleguide: Components.badge
+.c-badge {
+  @include space(xs, inner);
+  background: get-color('negative');
+  border-radius: 4px;
+  color: get-color('white');
+  font-size: .8em;
+
+  &--top-right {
+    position: absolute;
+    right: em(10px);
+    top: em(10px);
+  }
+
+  &--rounded {
+    @include size(24);
+    border-radius: 10em;
+    display: inline-block;
+    text-align: center;
+  }
+
+}

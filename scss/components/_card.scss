@@ -1,6 +1,15 @@
 // Card
 //
+// Namespace: `c-card`
+//
 // Multi-purpose card component. Can contain nearly anything.
+//
+// Modifiers:
+//
+// - `--padded-sm` Adds small inner padding
+// - `--padded-md` Adds medium inner padding
+// - `--padded-lg` Adds large inner padding
+// - `--fill` Expands a card to its container
 //
 // Markup: _card.html
 //
@@ -12,8 +21,20 @@
   box-shadow: 0 1px 2px 0 get-color('darkest', .1);
   display: inline-block;
 
-  &--padded {
+  &--full {
+    width: 100%;
+  }
+
+  &--padded-sm {
     @include space(sm, inner, null, null, rem);
+  }
+
+  &--padded-md {
+    @include space(md, inner, null, null, rem);
+  }
+
+  &--padded-lg {
+    @include space(lg, inner, null, null, rem);
   }
 
 }

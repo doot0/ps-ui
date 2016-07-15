@@ -1,5 +1,7 @@
 // Theme box
 //
+// Namespace: `a-box`
+//
 // Base styles for box like elements that appear very frequently in the UI
 //
 // Markup: _box.html
@@ -7,7 +9,6 @@
 // Styleguide: Atomics.box
 .a-box {
   background-color: get-color('white');
-  border: 1px solid get-color('light');
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 get-color('darkest', .1);
 }

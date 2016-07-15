@@ -1,0 +1,46 @@
+// Form input
+//
+// Namespace: `c-input`
+//
+// Basic form input styles.
+//
+// Markup: _input.html
+//
+// Styleguide: Components.input
+.c-input {
+  @include space(sm, inner, x, null, rem);
+  border: 1px solid get-color('light');
+  border-radius: 4px;
+  color: get-color('darker');
+  display: block;
+  height: em(42);
+
+  &:hover {
+    border-color: get-color('dark');
+    outline: 0;
+  }
+
+  &:focus {
+    border-color: get-color('primary');
+    outline: 0;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &.has-error {
+    border-color: currentColor;
+    color: get-color('negative');
+  }
+
+  &.has-attention {
+    border-color: currentColor;
+    color: get-color('attention');
+  }
+
+  &.is-valid {
+    border-color: get-color('positive');
+  }
+
+}

@@ -17,7 +17,7 @@
   }
 
   @if $direction == null {
-    #{$_property}: $_space;
+    #{$_property}: $_result-space;
   } @else {
     @if($direction == 'top' or $direction == 'y')    { #{$_property}-top: $_result-space; }
     @if($direction == 'bottom' or $direction == 'y') { #{$_property}-bottom: $_result-space; }

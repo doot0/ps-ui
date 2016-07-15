@@ -1,0 +1,47 @@
+// Margin resets
+//
+// Namespace: `i-margin-reset`
+//
+// Resets margins to 0 for a given direction or axis. Available modifiers:
+// - `--top`
+// - `--left`
+// - `--bottom`
+// - `--right`
+// - `--x` for X axis
+// - `--y` for Y axis
+//
+// Markup: _margin-reset.html
+//
+// Styleguide: Immutables.margin-reset
+
+.i-margin-reset {
+
+  margin: 0 !important;
+
+  &--top {
+    margin-top: 0 !important;
+  }
+
+  &--left {
+    margin-left: 0 !important;
+  }
+
+  &--right {
+    margin-right: 0 !important;
+  }
+
+  &--bottom {
+    margin-bottom: 0 !important;
+  }
+
+  &--x {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  &--y {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+}

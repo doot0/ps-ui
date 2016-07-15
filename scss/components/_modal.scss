@@ -1,0 +1,38 @@
+// Modal
+//
+// Namespace: `c-modal`
+//
+// A modal.
+//
+// Markup: _modal.html
+//
+// Styleguide: Components.modal
+.c-modal {
+  @include space(sm, outer);
+  border-radius: 4px;
+  box-shadow: 0 1px 12px get-color('darkest', .2);
+  max-height: 80vh;
+  max-width: rem(640);
+  overflow-y: auto;
+
+  &__row {
+    @include space(sm, inner);
+    background-color: get-color('white');
+    overflow-y: auto;
+
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+
+    &--dark {
+      background-color: get-color('darkest');
+      color: get-color('white');
+    }
+
+  }
+
+}

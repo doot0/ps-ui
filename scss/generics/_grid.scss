@@ -1,10 +1,18 @@
 // This file contains a bunch of vendor prefixes that need to be used in a
-// specific order for the sake of Safari.
-// There are also some instances where 4th level nesting needs to happen.
+// specific order for the sake of Safari. There are also some instances where
+// 4th level nesting straight up needs to happen.
+//
+// I should also add that while grids are technically an object, they are
+// somewhat implementation specific - hence why this grid is a generic and not
+// an object.
+//
 // Grids are weird. ¯\_(ツ)_/¯
+//
 // scss-lint:disable VendorPrefix PropertySortOrder NestingDepth
 
 // Grid
+//
+// Namespace: `o-grid`
 //
 // Reversed rows, auto-width items, gutterless rows/items, breakpoints.
 //
@@ -26,7 +34,7 @@ $_cols: $cfg-grid-cols;
   box-sizing: border-box;
 }
 
-.grid {
+.o-grid {
 
   @include space(sm, outer, x, null, rem);
 

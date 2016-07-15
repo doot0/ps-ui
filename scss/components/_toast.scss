@@ -1,0 +1,41 @@
+// Toast
+//
+// Namespace: `c-toast`
+//
+// Toasts can be fixed to the viewport using `--fixed`.
+//
+// Markup: _toast.html
+//
+// Styleguide: Components.toast
+.c-toast {
+  @include space(md, inner);
+  background: get-color('darkest');
+  margin: 0 auto;
+  max-width: rem(600px);
+
+  &__message {
+    color: get-color('white');
+  }
+
+  &__action {
+    color: get-color('primary');
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  &--fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: z-index('toast');
+  }
+
+  &--top {
+    top: 0;
+  }
+
+  &--bottom {
+    bottom: 0;
+  }
+
+}

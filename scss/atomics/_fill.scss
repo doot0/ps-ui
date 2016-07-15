@@ -1,0 +1,18 @@
+// Fills
+//
+// Namespace: `a-fill`
+//
+// Fill atomics generated from the variable palette.
+//
+// Markup: _fill.html
+//
+// Styleguide: Atomics.fill
+$_colors: $cfg-palette;
+
+.a-fill {
+  @each $palette-name, $color in $_colors {
+    &--#{$palette-name} {
+      fill: $color;
+    }
+  }
+}

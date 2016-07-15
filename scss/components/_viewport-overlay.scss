@@ -1,8 +1,14 @@
 // Viewport overlay
 //
+// Namespace: `c-viewport-overlay`
+//
 // An overlay that always fills the whole viewport. Can contain any markup.
-// A modifier exists for when an overlay can fill the entire device's screen
-// which is `--fill-device`.
+//
+// Modifiers
+// - `--fill-device` - Fills the entire screen
+// - `--light` - Gives a light background
+// - `--dark` - Gives a darker background
+// - `--center-content` - Centers all content as much as is possible
 //
 // Markup: _viewport-overlay.html
 //
@@ -10,16 +16,38 @@
 .c-viewport-overlay {
   @include absolute(0, 0, 0, 0);
   background-color: get-color('white');
+  position: fixed;
   z-index: z-index('viewport-overlay');
 
-  &--transparent {
-    backdrop-filter: blur(5px);
-    background-color: get-color('white', .9);
+  &--fill-device {
+    height: 100vh;
+    width: 100vw;
   }
 
-  &--fill-device {
-    width: 100vw;
-    height: 100vh;
+  &--center-content {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &--light {
+    background-color: get-color('lightest', .9);
+  }
+
+  &--dark {
+    background-color: get-color('darkest', .5);
+  }
+
+  &__close {
+    position: absolute;
+    right: rem(10);
+    top: rem(10);
+
+    + * {
+      @include space(xl, outer, top, null, rem);
+    }
+
   }
 
 }

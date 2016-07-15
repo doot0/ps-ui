@@ -1,24 +1,18 @@
+// Colors
+//
+// Namespace: `a-color`
+//
+// Color atomics generated from the variable palette.
+//
+// Markup: _color.html
+//
+// Styleguide: Atomics.color
 $_colors: $cfg-palette;
-// $_props: ('background', 'fill');
-$_props: ('fill');
 
 .a-color {
-
   @each $palette-name, $color in $_colors {
-
     &--#{$palette-name} {
       color: $color;
     }
-
-    @each $prop in $_props {
-      $short-prop: str-slice($prop, 0, 1);
-
-      &--#{$short-prop}-#{$palette-name} {
-        #{$prop}: $color;
-      }
-
-    }
-
   }
-
 }

@@ -1,0 +1,29 @@
+// Form label
+//
+// Namespace: `c-input-label`
+//
+// Labels for form inputs.
+//
+// Markup: _label.html
+//
+// Styleguide: Components.input-label
+.c-input-label {
+  color: get-color('darker');
+  display: block;
+
+  > .c-input {
+    @include space(xs, outer, top);
+  }
+
+  &--inline {
+    align-items: center;
+    display: flex;
+
+    > .c-input {
+      @include space(xs, outer, left);
+      margin-top: 0;
+    }
+
+  }
+
+}

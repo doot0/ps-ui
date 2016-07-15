@@ -1,0 +1,43 @@
+// Message
+//
+// Namespace: `c-message`
+//
+// Chat message component. Messages can be grouped and have attachments.
+//
+// Markup: _message.html
+//
+// Styleguide: Components.message
+.c-message {
+
+  @include space(sm, outer, bottom, null, rem);
+
+  &--grouped {
+
+  }
+
+  &__avatar {
+
+    .c-message--grouped & {
+      visibility: hidden;
+    }
+
+  }
+
+  &__content {
+
+  }
+
+  &__attachments {
+    @include space(sm, outer, top, null, rem);
+
+    .c-message--grouped & {
+      margin-left: em(58px);
+    }
+
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}

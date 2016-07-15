@@ -1,0 +1,47 @@
+// Compose box
+//
+// Namespace: `c-compose-box`
+//
+// The primary compose box for the app.
+//
+// Markup: _compose.html
+//
+// Styleguide: Components.compose-box
+.c-compose-box {
+
+  position: relative;
+  width: 100%;
+
+  &__input {
+    @include space(sm, inner);
+    border: 1px solid get-color('light');
+    border-radius: 4px 4px 0 0;
+    resize: none;
+    width: 100%;
+    height: em(42);
+    color: get-color('darker');
+    outline: 0;
+    display: block;
+  }
+
+  &__actions {
+    border: 1px solid get-color('light');
+    border-top: 0;
+    height: em(42);
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    overflow-y: hidden;
+  }
+
+  &__action {
+    min-width: em(42px);
+    height: em(42);
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid get-color('light');
+  }
+
+}

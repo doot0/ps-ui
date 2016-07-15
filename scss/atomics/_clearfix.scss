@@ -1,0 +1,15 @@
+// Clearfix
+//
+// Namespace: `a-clearfix`
+//
+// Clearfixes the element it is applied to. Useful in conjunction w/
+// the float atomic.
+//
+// Markup: _clearfix.html
+//
+// Styleguide: Atomics.clearfix
+.a-clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}

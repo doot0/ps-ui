@@ -1,0 +1,30 @@
+// Headings
+//
+// Namespace: `a-heading`
+//
+// Headings.
+//
+// Markup: _heading.html
+//
+// Styleguide: Atomics.headings
+
+$_heading-sizes: $cfg-headings;
+$_line-heights: $cfg-headings-lineheights;
+
+.a-heading {
+
+  @each $heading, $size in $_heading-sizes {
+    $_suffix: str-slice($heading, 2, str-length($heading));
+
+    &--#{$_suffix} {
+      font-size: rem($size);
+      font-weight: 400;
+      line-height: rem(map-get($_line-heights, $heading));
+    }
+  }
+
+  &__sub {
+    @include space(sm, outer, top, null, rem);
+  }
+
+}

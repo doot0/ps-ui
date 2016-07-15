@@ -1,5 +1,7 @@
 // Button
 //
+// Namespace: `c-btn`
+//
 // Button component.
 //
 // Markup: _button.html
@@ -7,11 +9,14 @@
 // Styleguide: Components.button
 .c-btn {
 
-  @include space(sm, inner, null, null, rem);
+  @include space(sm, inner, x, null, rem);
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+  height: em(42px);
+  line-height: em(42px);
   overflow: visible;
+  position: relative;
   text-align: center;
   vertical-align: middle;
 
@@ -23,7 +28,7 @@
   &--secondary {
     background-color: get-color('white');
     border: 1px solid get-color('light');
-    color: get-color('dark');
+    color: get-color('darker');
   }
 
   &--disabled,
@@ -33,7 +38,29 @@
   }
 
   &--rounded {
-    border-radius: 50%;
+    border-radius: 10em;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: inherit;
+
+    &--left {
+      @include space(xs, outer, right, null, rem);
+      float: left;
+      height: inherit;
+    }
+
+    &--right {
+      @include space(xs, outer, left, null, rem);
+      float: right;
+      height: inherit;
+    }
+
   }
 
 }

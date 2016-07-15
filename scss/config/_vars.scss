@@ -15,12 +15,9 @@ $cfg-palette: (
   'dark'           : #a4adb5,
   'darker'         : #5a646f,
   'darkest'        : #3d4752,
-  'positive'       : #2fdf6b,
+  'positive'       : #29d1a6,
   'attention'      : #ecbd0b,
   'negative'       : #f1575f,
-  'form-positive'  : #c2ecda,
-  'form-attention' : #f7e6ce,
-  'form-negative'  : #fbd6d8,
   'white'          : #ffffff
 );
 
@@ -46,6 +43,24 @@ $cfg-fonts: (
   'body' : (Noto Sans, sans-serif)
 );
 
+$cfg-headings: (
+  'h1' : 48px,
+  'h2' : 36px,
+  'h3' : 24px,
+  'h4' : 18px,
+  'h5' : 16px,
+  'h6' : 14px
+);
+
+$cfg-headings-lineheights: (
+  'h1' : 64px,
+  'h2' : 48px,
+  'h3' : 36px,
+  'h4' : 24px,
+  'h5' : 22px,
+  'h6' : 20px
+);
+
 $cfg-font-sizes: (
   'xs' : 12px,
   'sm' : 14px,
@@ -56,6 +71,7 @@ $cfg-font-sizes: (
 
 $cfg-z-indexes: (
   'INT_MAX'            :  2147483647,
+  'toast'              :  7500,
   'viewport-overlay'   :  5000,
   'header'             :  500,
   'default'            :  1,
