@@ -1021,6 +1021,41 @@ a {
 .a-color--white {
   color: #ffffff; }
 
+.a-border--all {
+  border: 1px solid; }
+.a-border--t {
+  border-top: 1px solid; }
+.a-border--r {
+  border-right: 1px solid; }
+.a-border--b {
+  border-bottom: 1px solid; }
+.a-border--l {
+  border-left: 1px solid; }
+.a-border--brand {
+  border-color: #7443bf; }
+.a-border--primary {
+  border-color: #439be5; }
+.a-border--lightest {
+  border-color: #f9fbfd; }
+.a-border--lighter {
+  border-color: #f2f6f9; }
+.a-border--light {
+  border-color: #e4eaf1; }
+.a-border--dark {
+  border-color: #a4adb5; }
+.a-border--darker {
+  border-color: #5a646f; }
+.a-border--darkest {
+  border-color: #3d4752; }
+.a-border--positive {
+  border-color: #29d1a6; }
+.a-border--attention {
+  border-color: #ecbd0b; }
+.a-border--negative {
+  border-color: #f1575f; }
+.a-border--white {
+  border-color: #ffffff; }
+
 .a-fill--brand {
   fill: #7443bf; }
 .a-fill--primary {
@@ -1117,9 +1152,11 @@ a {
 .a-space--xs-m {
   margin: 0.35714rem; }
 .a-space--xs-m-x {
-  margin: 0 0.35714rem; }
+  margin-left: 0.35714rem;
+  margin-right: 0.35714rem; }
 .a-space--xs-m-y {
-  margin: 0.35714rem 0; }
+  margin-top: 0.35714rem;
+  margin-bottom: 0.35714rem; }
 .a-space--xs-mt {
   margin-top: 0.35714rem; }
 .a-space--xs-mb {
@@ -1131,9 +1168,11 @@ a {
 .a-space--xs-p {
   padding: 0.35714rem; }
 .a-space--xs-p-x {
-  padding: 0 0.35714rem; }
+  padding-left: 0.35714rem;
+  padding-right: 0.35714rem; }
 .a-space--xs-p-y {
-  padding: 0.35714rem 0; }
+  padding-top: 0.35714rem;
+  padding-bottom: 0.35714rem; }
 .a-space--xs-pt {
   padding-top: 0.35714rem; }
 .a-space--xs-pb {
@@ -1145,9 +1184,11 @@ a {
 .a-space--sm-m {
   margin: 0.71429rem; }
 .a-space--sm-m-x {
-  margin: 0 0.71429rem; }
+  margin-left: 0.71429rem;
+  margin-right: 0.71429rem; }
 .a-space--sm-m-y {
-  margin: 0.71429rem 0; }
+  margin-top: 0.71429rem;
+  margin-bottom: 0.71429rem; }
 .a-space--sm-mt {
   margin-top: 0.71429rem; }
 .a-space--sm-mb {
@@ -1159,9 +1200,11 @@ a {
 .a-space--sm-p {
   padding: 0.71429rem; }
 .a-space--sm-p-x {
-  padding: 0 0.71429rem; }
+  padding-left: 0.71429rem;
+  padding-right: 0.71429rem; }
 .a-space--sm-p-y {
-  padding: 0.71429rem 0; }
+  padding-top: 0.71429rem;
+  padding-bottom: 0.71429rem; }
 .a-space--sm-pt {
   padding-top: 0.71429rem; }
 .a-space--sm-pb {
@@ -1173,9 +1216,11 @@ a {
 .a-space--md-m {
   margin: 1.42857rem; }
 .a-space--md-m-x {
-  margin: 0 1.42857rem; }
+  margin-left: 1.42857rem;
+  margin-right: 1.42857rem; }
 .a-space--md-m-y {
-  margin: 1.42857rem 0; }
+  margin-top: 1.42857rem;
+  margin-bottom: 1.42857rem; }
 .a-space--md-mt {
   margin-top: 1.42857rem; }
 .a-space--md-mb {
@@ -1187,9 +1232,11 @@ a {
 .a-space--md-p {
   padding: 1.42857rem; }
 .a-space--md-p-x {
-  padding: 0 1.42857rem; }
+  padding-left: 1.42857rem;
+  padding-right: 1.42857rem; }
 .a-space--md-p-y {
-  padding: 1.42857rem 0; }
+  padding-top: 1.42857rem;
+  padding-bottom: 1.42857rem; }
 .a-space--md-pt {
   padding-top: 1.42857rem; }
 .a-space--md-pb {
@@ -1201,9 +1248,11 @@ a {
 .a-space--lg-m {
   margin: 2.85714rem; }
 .a-space--lg-m-x {
-  margin: 0 2.85714rem; }
+  margin-left: 2.85714rem;
+  margin-right: 2.85714rem; }
 .a-space--lg-m-y {
-  margin: 2.85714rem 0; }
+  margin-top: 2.85714rem;
+  margin-bottom: 2.85714rem; }
 .a-space--lg-mt {
   margin-top: 2.85714rem; }
 .a-space--lg-mb {
@@ -1215,9 +1264,11 @@ a {
 .a-space--lg-p {
   padding: 2.85714rem; }
 .a-space--lg-p-x {
-  padding: 0 2.85714rem; }
+  padding-left: 2.85714rem;
+  padding-right: 2.85714rem; }
 .a-space--lg-p-y {
-  padding: 2.85714rem 0; }
+  padding-top: 2.85714rem;
+  padding-bottom: 2.85714rem; }
 .a-space--lg-pt {
   padding-top: 2.85714rem; }
 .a-space--lg-pb {
@@ -1229,9 +1280,11 @@ a {
 .a-space--xl-m {
   margin: 5.71429rem; }
 .a-space--xl-m-x {
-  margin: 0 5.71429rem; }
+  margin-left: 5.71429rem;
+  margin-right: 5.71429rem; }
 .a-space--xl-m-y {
-  margin: 5.71429rem 0; }
+  margin-top: 5.71429rem;
+  margin-bottom: 5.71429rem; }
 .a-space--xl-mt {
   margin-top: 5.71429rem; }
 .a-space--xl-mb {
@@ -1243,9 +1296,11 @@ a {
 .a-space--xl-p {
   padding: 5.71429rem; }
 .a-space--xl-p-x {
-  padding: 0 5.71429rem; }
+  padding-left: 5.71429rem;
+  padding-right: 5.71429rem; }
 .a-space--xl-p-y {
-  padding: 5.71429rem 0; }
+  padding-top: 5.71429rem;
+  padding-bottom: 5.71429rem; }
 .a-space--xl-pt {
   padding-top: 5.71429rem; }
 .a-space--xl-pb {

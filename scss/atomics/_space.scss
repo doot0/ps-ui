@@ -1,3 +1,28 @@
+// Spacing
+//
+// Namespace: `a-space`
+//
+// Multi-directional spacing. The namespacing for this is quite complex, so
+// read carefully.
+//
+// Modifiers:
+//
+// - `--[size]-[type(dir)](-[axis])` Size, margin/padding, optional x/y axis
+//
+//
+// - Size can be `[xs, sm, md, lg, xl]`
+// - Type can be `[m, p]` [margin, padding]
+// - Type(dir) can be `[t, r, b, l]` [top, right, bottom, left] (Optional)
+// - Axis can be `[x, y]` [x axis, y axis] (Optional)
+//
+//
+// - `.a-space--xs-mt` would be "space extra small, margin only top"
+// - `.a-space--lg-p` would be "space large, padding all"
+// - `.a-space--md-p-x` would be "space medium, padding only x axis"
+//
+// Markup: _space.html
+//
+// Styleguide: Atomics.space
 $_spaces: $cfg-spacing;
 $_directions: ('top', 'bottom', 'left', 'right');
 $_types: ('margin', 'padding');
@@ -14,11 +39,13 @@ $_types: ('margin', 'padding');
       }
 
       &--#{$size}-#{$short-type}-x {
-        #{$type}: 0 rem($spacing);
+        #{$type}-left: rem($spacing);
+        #{$type}-right: rem($spacing);
       }
 
       &--#{$size}-#{$short-type}-y {
-        #{$type}: rem($spacing) 0;
+        #{$type}-top: rem($spacing);
+        #{$type}-bottom: rem($spacing);
       }
 
       @each $direction in $_directions {

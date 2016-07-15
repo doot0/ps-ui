@@ -1,0 +1,41 @@
+// Borders
+//
+// Namespace: `a-border`
+//
+// Coloured, directional borders.
+//
+// Modifiers:
+//
+// - `--t, --b, --l, --r, --all` Top, bottom, left, right & all
+// - `--primary, --brand etc` Colours according to the palette
+//
+// Markup: _border.html
+//
+// Styleguide: Atomics.border
+$_directions: ('top', 'right', 'bottom', 'left');
+$_colors: $cfg-palette;
+
+.a-border {
+
+  &--all {
+    border: 1px solid;
+  }
+
+  @each $direction in $_directions {
+    $_shortdir: str-slice($direction, 0, 1);
+
+    &--#{$_shortdir} {
+      // The linter incorrectly throws a warning and misparses this as
+      // "border-#", which is definitely not a real property. ¯\_(ツ)_/¯
+      // scss-lint:disable PropertyUnits
+      border-#{$direction}: 1px solid;
+    }
+  }
+
+  @each $color, $value in $_colors {
+    &--#{$color} {
+      border-color: $value;
+    }
+  }
+
+}
