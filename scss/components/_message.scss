@@ -36,6 +36,17 @@
 
   }
 
+  &__attachment {
+    max-width: em(320, 14);
+    width: 100%;
+
+    @include breakpoint(md) {
+      max-width: none;
+      width: auto;
+    }
+
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

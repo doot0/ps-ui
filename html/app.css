@@ -388,6 +388,11 @@ h6,
 p {
   margin: 0; }
 
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
 .o-grid {
   margin-left: 0.71429rem;
   margin-right: 0.71429rem; }
@@ -1009,6 +1014,8 @@ a {
 
 .a-cursor--pointer {
   cursor: pointer; }
+.a-cursor--disabled {
+  cursor: not-allowed; }
 
 .a-color--brand {
   color: #7443bf; }
@@ -1094,6 +1101,8 @@ a {
   border-color: #f1575f; }
 .a-border--white {
   border-color: #ffffff; }
+.a-border--rounded {
+  border-radius: 4px; }
 
 .a-fill--brand {
   fill: #7443bf; }
@@ -1158,6 +1167,8 @@ a {
   font-family: inherit; }
 .a-type--size-inherit {
   font-size: inherit; }
+.a-type--color-inherit {
+  color: inherit; }
 .a-type--decoration-none {
   text-decoration: none; }
 
@@ -1351,7 +1362,8 @@ a {
 
 .o-icon {
   height: 1.71429em;
-  width: 1.71429em; }
+  width: 1.71429em;
+  vertical-align: middle; }
   .o-icon--xs {
     height: 1.14286em;
     width: 1.14286em; }
@@ -1390,9 +1402,7 @@ a {
     flex: 1; }
 
 .o-list-bare {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+  list-style: none; }
 
 .c-avatar {
   height: 3.42857em;
@@ -1596,6 +1606,9 @@ a {
     display: flex;
     flex: 1;
     justify-content: flex-end; }
+  .c-header--transparent {
+    background-color: transparent;
+    border-bottom: 0; }
 
 .c-message {
   margin-bottom: 0.71429rem; }
@@ -1605,6 +1618,13 @@ a {
     margin-top: 0.71429rem; }
     .c-message--grouped .c-message__attachments {
       margin-left: 4.14286em; }
+  .c-message__attachment {
+    max-width: 22.85714em;
+    width: 100%; }
+    @media (min-width: 30em) {
+      .c-message__attachment {
+        max-width: none;
+        width: auto; } }
   .c-message:last-child {
     margin-bottom: 0; }
 
@@ -1795,6 +1815,31 @@ a {
     align-items: center;
     justify-content: center;
     border-right: 1px solid #e4eaf1; }
+
+.c-navigation-pane {
+  max-width: 22.85714em; }
+  .c-navigation-pane__item {
+    border: 1px solid transparent; }
+    .c-navigation-pane__item:hover {
+      background: #f2f6f9;
+      border-color: #e4eaf1; }
+
+.c-sidebar-pane {
+  background: #3d4752;
+  color: #a4adb5;
+  height: 100%;
+  max-width: 22.85714em; }
+  .c-sidebar-pane.t-light {
+    background: white;
+    box-shadow: 0 0 24px rgba(61, 71, 82, 0.2);
+    color: #5a646f; }
+
+.c-sidebar-menu__item {
+  color: #a4adb5; }
+  .c-sidebar-menu__item:hover {
+    color: #e4eaf1; }
+  .c-sidebar-menu__item--large {
+    color: white; }
 
 .i-margin-reset {
   margin: 0 !important; }

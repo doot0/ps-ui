@@ -1,0 +1,31 @@
+// Sidebar menu
+//
+// Namespace: `c-sidebar-menu`
+//
+// Markup: _sidebar-menu.html
+//
+// Styleguide: Components.sidebar-menu
+.c-sidebar-menu {
+
+  &__item {
+    color: get-color('dark');
+
+    &:hover {
+      color: get-color('light');
+    }
+
+    &--large {
+      color: get-color('white');
+    }
+
+  }
+
+  .t-light & {
+
+    &__item {
+
+    }
+
+  }
+
+}

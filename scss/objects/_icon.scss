@@ -10,6 +10,7 @@
 
 .o-icon {
   @include size(24px);
+  vertical-align: middle;
 
   &--xs {
     @include size(16px);

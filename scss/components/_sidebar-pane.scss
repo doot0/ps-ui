@@ -1,0 +1,20 @@
+// Sidebar pane and items
+//
+// Namespace: `c-sidebar-pane`
+//
+// Markup: _sidebar-pane.html
+//
+// Styleguide: Components.sidebar-pane
+.c-sidebar-pane {
+  background: get-color('darkest');
+  color: get-color('dark');
+  height: 100%;
+  max-width: em(320, 14);
+
+  &.t-light {
+    background: get-color('white');
+    box-shadow: 0 0 24px get-color('darkest', .2);
+    color: get-color('darker');
+  }
+
+}

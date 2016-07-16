@@ -8,6 +8,7 @@
 //
 // - `--t, --b, --l, --r, --all` Top, bottom, left, right & all
 // - `--primary, --brand etc` Colours according to the palette
+// - `--rounded` Makes the border slightly rounded
 //
 // Markup: _border.html
 //
@@ -36,6 +37,10 @@ $_colors: $cfg-palette;
     &--#{$color} {
       border-color: $value;
     }
+  }
+
+  &--rounded {
+    border-radius: 4px;
   }
 
 }

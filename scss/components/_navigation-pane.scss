@@ -1,0 +1,22 @@
+// Navigation pane & items
+//
+// Namespace: `c-navigation-pane`
+//
+// Markup: _navigation-pane.html
+//
+// Styleguide: Components.navigation-pane
+.c-navigation-pane {
+
+  max-width: em(320, 14);
+
+  &__item {
+    border: 1px solid transparent;
+
+    &:hover {
+      background: get-color('lighter');
+      border-color: get-color('light');
+    }
+
+  }
+
+}

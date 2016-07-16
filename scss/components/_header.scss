@@ -37,4 +37,9 @@
     justify-content: flex-end;
   }
 
+  &--transparent {
+    background-color: transparent;
+    border-bottom: 0;
+  }
+
 }

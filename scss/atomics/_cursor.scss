@@ -6,7 +6,13 @@
 //
 // Styleguide: Atomics.cursor
 .a-cursor {
+
   &--pointer {
     cursor: pointer;
   }
+
+  &--disabled {
+    cursor: not-allowed;
+  }
+
 }
