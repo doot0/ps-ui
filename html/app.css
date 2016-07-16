@@ -1360,6 +1360,13 @@ a {
 .a-space--xl-pr {
   padding-right: 5.71429rem; }
 
+.a-position--absolute {
+  position: absolute; }
+.a-position--fixed {
+  position: fixed; }
+.a-position--relative {
+  position: relative; }
+
 .o-icon {
   height: 1.71429em;
   width: 1.71429em;

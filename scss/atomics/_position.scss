@@ -1,0 +1,22 @@
+// Position
+//
+// Namespace: `a-position`
+//
+// Markup: _position.html
+//
+// Styleguide: Atomics.position
+.a-position {
+
+  &--absolute {
+    position: absolute;
+  }
+
+  &--fixed {
+    position: fixed;
+  }
+
+  &--relative {
+    position: relative;
+  }
+
+}
