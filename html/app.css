@@ -1731,7 +1731,8 @@ a {
     color: #5a646f; }
   .c-btn--disabled, .c-btn[disabled] {
     background-color: #e4eaf1;
-    color: #a4adb5; }
+    color: #a4adb5;
+    cursor: not-allowed; }
   .c-btn--rounded {
     border-radius: 10em; }
   .c-btn--full {

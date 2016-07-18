@@ -1,3 +1,10 @@
+// transform-align
+//
+// Aligns an element on its x or y axis using transforms.
+//
+// $axis - The axis to align. If no option is passed, aligns on both axes. `[optional]`
+//
+// Styleguide: Mixins.transform-align
 @mixin transform-align($axis: '') {
 
   position: absolute;

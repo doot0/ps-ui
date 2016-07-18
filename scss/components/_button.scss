@@ -35,6 +35,7 @@
   &[disabled] {
     background-color: get-color('light');
     color: get-color('dark');
+    cursor: not-allowed;
   }
 
   &--rounded {

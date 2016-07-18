@@ -1,3 +1,11 @@
+// get-color
+//
+// Gets a color from the pre-defined project palette.
+//
+// $color - The colour to get from the palette.
+// $opacity - If passed, applies opacity as a number from 0 to 1 `[optional]`
+//
+// Styleguide: Functions.get-color
 @function get-color($color, $opacity : 1) {
 
   $result: map-get($cfg-palette, $color);

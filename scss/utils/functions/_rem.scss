@@ -1,3 +1,11 @@
+// rem
+//
+// Converts pixels to rems.
+//
+// $px - The value in pixels to output as rems.
+// $ctx - Contextual value. Defaults to the base body font size (14px). `[optional]`
+//
+// Styleguide: Functions.rem
 @function rem($px, $ctx: $cfg-base-font-px) {
 
   @if ( unitless($px) ) {

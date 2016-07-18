@@ -1,3 +1,14 @@
+// position
+//
+// Positions an element with positional and optional direction bounds.
+//
+// $position - The position type (absolute, fixed etc)
+// $top - The amount to apply to the `top` property `[optional]`
+// $bottom - The amount to apply to the `bottom` property `[optional]`
+// $left - The amount to apply to the `left` property `[optional]`
+// $right - The amount to apply to the `right` property `[optional]`
+//
+// Styleguide: Mixins.position
 @mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
   top: $top;
@@ -6,6 +17,14 @@
   left: $left;
 }
 
+
+// absolute
+//
+// Absolute positioning shortcut.
+//
+// $args - Args to pass ($top, $bottom, $right, $left). If nothing passed, applies 0 to all directions. `[optional]`
+//
+// Styleguide: Mixins.position
 @mixin absolute($args...) {
   @include position(absolute, $args...);
 }

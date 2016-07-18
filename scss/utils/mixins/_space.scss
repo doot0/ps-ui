@@ -1,3 +1,14 @@
+// space
+//
+// Applies margins or paddings to a given element according to predefined UI sizes.
+//
+// $size - Target UI size (xs, sm, md, lg, xl)
+// $type - If the space should apply inwards or outwards in regards to the box model (outer, inner)
+// $direction - The axis or direction to apply the spacing in. (top, bottom, left, right, x, y) `[optional]`
+// $negative - Applies inverse spacing. Does not work for paddings. (negative) `[optional]`
+// $rem - If the size output should be in rems. (rem) `[optional]`
+//
+// Styleguide: Mixins.space
 @mixin space($size, $type, $direction: null, $negative: null, $rem: null) {
 
   $_property: if($type == 'outer', 'margin', 'padding');

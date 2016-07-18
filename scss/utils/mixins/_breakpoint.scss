@@ -1,3 +1,10 @@
+// breakpoint
+//
+// Wraps the enclosed styles in a breakpoint declaration.
+//
+// $size - Target breakpoint size
+//
+// Styleguide: Mixins.breakpoint
 @mixin breakpoint($size) {
 
   @if map-has-key($cfg-breakpoints, $size) {

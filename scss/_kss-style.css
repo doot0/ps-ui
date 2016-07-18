@@ -232,17 +232,70 @@ body {
 }
 
 #kss-node .kss-modifier__heading {
-  margin: 0;
+  display: none;
 }
 
 #kss-node .kss-modifier__example {
   padding: 10px;
-  min-height: 10em;
   overflow: hidden;
+  margin: 0;
+}
+
+#kss-node .kss-modifier__name {
+  font-family: monospace;
+}
+
+#kss-node .kss-modifier__default-name,
+#kss-node .kss-modifier__name,
+#kss-node .kss-modifier__description {
+  font-size: 13px;
+  padding: 0 10px;
+  background: #3D4752;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 #kss-node .kss-modifier__example > .c-viewport-overlay {
   position: absolute !important;
+}
+
+#kss-node .kss-parameters__title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#kss-node .kss-parameters__item {
+  vertical-align: middle;
+  display: block;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+#kss-node .kss-parameters__item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+#kss-node .kss-parameters {
+  width: 100%;
+}
+
+#kss-node .kss-parameters__name {
+  vertical-align: middle;
+  padding-right: .5ch;
+  display: inline-block;
+}
+
+#kss-node .kss-parameters__description {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+#kss-node .kss-parameters__name code{
+  background: #3D4752;
+  color: #fff;
+  padding: .5ch 1ch;
+  border-radius: 4px;
 }
 
 .codemirror {

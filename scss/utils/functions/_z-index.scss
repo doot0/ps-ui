@@ -1,3 +1,10 @@
+// z-index
+//
+// Gets a z-index from the pre-defined project z-index list.
+//
+// $name - The z-index layer as a name.
+//
+// Styleguide: Functions.z-index
 @function z-index($name) {
 
   @if map-has-key($cfg-z-indexes, $name) {

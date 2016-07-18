@@ -1,3 +1,10 @@
+// size
+//
+// Gets a UI size from the pre-defined project sizings list.
+//
+// $size - The UI size.
+//
+// Styleguide: Functions.size
 @function size($size) {
 
   @if map-has-key($cfg-spacing, $size) {

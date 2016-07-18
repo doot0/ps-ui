@@ -1,3 +1,8 @@
+// appearance-none
+//
+// Resets form appearances for inputs.
+//
+// Styleguide: Mixins.appearance-none
 @mixin appearance-none() {
   -webkit-appearance: none;
   -moz-appearance: none;
