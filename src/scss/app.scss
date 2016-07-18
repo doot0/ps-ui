@@ -35,6 +35,7 @@
 
 @import
 'config/vars',
+
 'utils/functions/get-color',
 'utils/functions/em',
 'utils/functions/rem',
@@ -46,11 +47,14 @@
 'utils/mixins/size',
 'utils/mixins/breakpoint',
 'utils/mixins/appearance-none',
+
 'generics/reset',
 'generics/reset-extras',
 'generics/grid',
+
 'base/hr',
 'base/a',
+
 'atomics/display',
 'atomics/cursor',
 'atomics/color',
@@ -65,10 +69,12 @@
 'atomics/heading',
 'atomics/space',
 'atomics/position',
+
 'objects/icon',
 'objects/media',
 'objects/list-inline',
 'objects/list-bare',
+
 'components/avatar',
 'components/avatar-group',
 'components/tab-nav',
@@ -90,5 +96,6 @@
 'components/sidebar-pane',
 'components/sidebar-menu',
 'components/table',
+
 'immutables/margin-reset',
 'immutables/padding-reset';
