@@ -4,8 +4,29 @@
 //                                                    └─┘└─┘┴ ┴┴  ┴ ┴└─┘└─┘
 // ============================================================================
 
+// Base font size
+//
+// $cfg-base-font-px - `14`
+//
+// Styleguide: Variables.base-font-px
 $cfg-base-font-px: 14;
 
+// Colour palette
+//
+// brand - <span style="background: #7443bf; color: #fff; padding: .5em;">#7443bf</span>
+// primary - <span style="background: #439be5; color: #fff; padding: .5em;">#439be5</span>
+// lightest - <span style="background: #f9fbfd; color: #333; padding: .5em;">#f9fbfd</span>
+// lighter - <span style="background: #f2f6f9; color: #333; padding: .5em;">#f2f6f9</span>
+// light - <span style="background: #e4eaf1; color: #333; padding: .5em;">#e4eaf1</span>
+// dark - <span style="background: #a4adb5; color: #333; padding: .5em;">#a4adb5</span>
+// darker - <span style="background: #5a646f; color: #fff; padding: .5em;">#5a646f</span>
+// darkest - <span style="background: #3d4752; color: #fff; padding: .5em;">#3d4752</span>
+// positive - <span style="background: #29d1a6; color: #fff; padding: .5em;">#29d1a6</span>
+// attention - <span style="background: #ecbd0b; color: #fff; padding: .5em;">#ecbd0b</span>
+// negative - <span style="background: #f1575f; color: #fff; padding: .5em;">#f1575f</span>
+// white - <span style="background: #fff; color: #333; padding: .5em;">#fff</span>
+//
+// Styleguide: Variables.palette
 $cfg-palette: (
   'brand'          : #7443bf,
   'primary'        : #439be5,
@@ -21,6 +42,15 @@ $cfg-palette: (
   'white'          : #ffffff
 );
 
+// Spacing
+//
+// xs - `5px`
+// sm - `10px`
+// md - `20px`
+// lg - `40px`
+// xl - `80px`
+//
+// Styleguide: Variables.spacing
 $cfg-spacing: (
   'xs' : 5px,
   'sm' : 10px,
@@ -29,6 +59,15 @@ $cfg-spacing: (
   'xl' : 80px
 );
 
+// Breakpoints
+//
+// xs - `10em`
+// sm - `20em`
+// md - `30em`
+// lg - `48em`
+// xl - `70em`
+//
+// Styleguide: Variables.breakpoints
 $cfg-breakpoints: (
   'xs' : 10em,
   'sm' : 20em,
@@ -37,12 +76,32 @@ $cfg-breakpoints: (
   'xl' : 70em
 );
 
+// Grid columns
+//
+// $cfg-grid-cols - `12`
+//
+// Styleguide: Variables.grid-columns
 $cfg-grid-cols: 12;
 
+// Font stacks
+//
+// body - `Noto Sans, sans-serif`
+//
+// Styleguide: Variables.fonts
 $cfg-fonts: (
   'body' : (Noto Sans, sans-serif)
 );
 
+// Heading sizes
+//
+// h1 - `48px`
+// h2 - `36px`
+// h3 - `24px`
+// h4 - `18px`
+// h5 - `16px`
+// h6 - `14px`
+//
+// Styleguide.Variables.headings
 $cfg-headings: (
   'h1' : 48px,
   'h2' : 36px,
@@ -52,6 +111,16 @@ $cfg-headings: (
   'h6' : 14px
 );
 
+// Heading lineheights
+//
+// h1 - `64px`
+// h2 - `48px`
+// h3 - `36px`
+// h4 - `24px`
+// h5 - `22px`
+// h6 - `20px`
+//
+// Styleguide.Variables.headings
 $cfg-headings-lineheights: (
   'h1' : 64px,
   'h2' : 48px,
@@ -61,6 +130,15 @@ $cfg-headings-lineheights: (
   'h6' : 20px
 );
 
+// Font sizes
+//
+// xs - `12px`
+// sm - `14px`
+// md - `16px`
+// lg - `18px`
+// xl - `20px`
+//
+// Styleguide: Variables.font-sizes
 $cfg-font-sizes: (
   'xs' : 12px,
   'sm' : 14px,
@@ -69,6 +147,18 @@ $cfg-font-sizes: (
   'xl' : 20px
 );
 
+// Z-indexes
+//
+//  INT_MAX - `2147483647`
+//  toast -  `7500`
+//  viewport-overlay - `5000`
+//  header - `500`
+//  default - `1`
+//  reset - `0`
+//  lower - `-1`
+//  lowest - `-10`
+//
+// Styleguide: Variables.z-indexes
 $cfg-z-indexes: (
   'INT_MAX'            :  2147483647,
   'toast'              :  7500,
