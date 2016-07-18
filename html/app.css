@@ -393,6 +393,20 @@ li {
   margin: 0;
   padding: 0; }
 
+table,
+th,
+td {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%; }
+
 .o-grid {
   margin-left: 0.71429rem;
   margin-right: 0.71429rem; }
@@ -1679,6 +1693,23 @@ a {
   .c-avatar-group .c-avatar + .c-avatar {
     margin-left: -2em; }
 
+.c-tab-nav {
+  border-bottom: 2px solid #e4eaf1; }
+  .c-tab-nav__list {
+    margin-bottom: -2px; }
+  .c-tab-nav li {
+    padding-left: 1.42857em;
+    padding-right: 1.42857em;
+    padding-top: 0.71429em;
+    padding-bottom: 0.71429em;
+    border-bottom: 2px solid #e4eaf1; }
+    .c-tab-nav li:hover, .c-tab-nav li.is-active {
+      border-bottom-color: #7443bf;
+      color: #7443bf;
+      cursor: pointer; }
+    .c-tab-nav li + li {
+      margin-left: 0.71429em; }
+
 .c-btn {
   padding-left: 0.71429rem;
   padding-right: 0.71429rem;
@@ -1878,6 +1909,27 @@ a {
       margin-left: 0.35714em;
       margin-top: 0; }
 
+.c-input-dropdown {
+  display: inline-block;
+  position: relative; }
+  .c-input-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    padding-right: 2.85714em;
+    background-color: white;
+    color: currentColor;
+    width: 100%; }
+  .c-input-dropdown--fill {
+    width: 100%; }
+  .c-input-dropdown__arrow {
+    fill: currentColor;
+    position: absolute;
+    right: 0.71429em;
+    top: 50%;
+    transform: translateY(-50%); }
+
 .c-token {
   padding-left: 0.71429em;
   padding-right: 0.71429em;
@@ -1988,6 +2040,23 @@ a {
     color: #e4eaf1; }
   .c-sidebar-menu__item--large {
     color: white; }
+
+.c-table {
+  width: 100%; }
+  .c-table--striped .c-table__header tr {
+    background-color: #f9fbfd; }
+  .c-table--striped tr:nth-child(even) {
+    background-color: #f9fbfd; }
+  .c-table--bordered tr + tr {
+    border-top: 1px solid #e4eaf1; }
+  .c-table__header {
+    border-bottom: 1px solid #e4eaf1;
+    color: #5a646f; }
+    .c-table__header th {
+      text-align: left; }
+  .c-table td,
+  .c-table th {
+    padding: 0.71429em; }
 
 .i-margin-reset {
   margin: 0 !important; }

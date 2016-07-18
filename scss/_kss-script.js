@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     "#kssref-components-modal .kss-modifier__example"
   ];
 
-  for (var i; i > subjects.length; i++) {
+  for (var i = 0; i < subjects.length; i++) {
     var target = document.querySelector(subjects[i]);
     if(target) target.style["min-height"] = "20em";
   }

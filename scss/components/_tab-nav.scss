@@ -1,0 +1,34 @@
+// Tab nav
+//
+// Namespace: `c-tab-nav`
+//
+// Markup: _tab-nav.html
+//
+// Styleguide: Components.tab-nav
+.c-tab-nav {
+
+  border-bottom: 2px solid get-color('light');
+
+  &__list {
+    margin-bottom: -2px;
+  }
+
+  li {
+    @include space(md, inner, x);
+    @include space(sm, inner, y);
+    border-bottom: 2px solid get-color('light');
+
+    &:hover,
+    &.is-active {
+      border-bottom-color: get-color('brand');
+      color: get-color('brand');
+      cursor: pointer;
+    }
+
+    + li {
+      @include space(sm, outer, left);
+    }
+
+  }
+
+}

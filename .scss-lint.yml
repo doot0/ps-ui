@@ -144,8 +144,8 @@ linters:
       padding: ['em', 'rem']
       height: ['vh', 'em', 'rem', 'px', '%']
       width: ['vw', 'em', 'rem', 'px', '%']
-      max-height: ['vh', 'em', 'rem', 'px']
-      max-width: ['vw', 'em', 'rem', 'px']
+      max-height: ['vh', 'em', 'rem', 'px', '%']
+      max-width: ['vw', 'em', 'rem', 'px', '%']
 
 
   PsuedoElement:

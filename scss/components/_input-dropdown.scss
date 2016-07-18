@@ -1,0 +1,33 @@
+// Form dropdown
+//
+// Namespace: `c-input-dropdown`
+//
+// Markup: _input-dropdown.html
+//
+// Styleguide: Components.input-dropdown
+
+.c-input-dropdown {
+  display: inline-block;
+  position: relative;
+
+  select {
+    @include appearance-none();
+    @include space(lg, inner, right);
+    background-color: get-color('white');
+    color: currentColor;
+    width: 100%;
+  }
+
+  &--fill {
+    width: 100%;
+  }
+
+  &__arrow {
+    fill: currentColor;
+    position: absolute;
+    right: em(10);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}

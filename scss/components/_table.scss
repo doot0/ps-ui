@@ -1,0 +1,46 @@
+// Tables
+//
+// Namespace: `c-table`
+//
+// Markup: _table.html
+//
+// Styleguide: Components.table
+.c-table {
+  width: 100%;
+
+  &--striped {
+
+    .c-table__header tr {
+      background-color: get-color('lightest');
+    }
+
+    tr:nth-child(even) {
+      background-color: get-color('lightest');
+    }
+
+  }
+
+  &--bordered {
+
+    tr + tr {
+      border-top: 1px solid get-color('light');
+    }
+
+  }
+
+  &__header {
+    border-bottom: 1px solid get-color('light');
+    color: get-color('darker');
+
+    th {
+      text-align: left;
+    }
+
+  }
+
+  td,
+  th {
+    @include space(sm, inner);
+  }
+
+}
