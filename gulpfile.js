@@ -29,7 +29,7 @@ gulp.task('docs', () => {
   gulp.src(paths.src.meta)
     .pipe(gulp.dest(paths.dist.meta))
 
-  exec('kss --homepage "'+__dirname+'/src/_meta/_styleguide-home.md" -c ./kss.json', function(err, out, stderr) {
+  exec('kss -c ./kss.json', function(err, out, stderr) {
     console.log(__dirname);
     console.log(out);
   })
