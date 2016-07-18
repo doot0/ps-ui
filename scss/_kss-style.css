@@ -209,6 +209,15 @@ body {
 
 .kss-overview pre {
   padding: 10px;
+  background-color: #3D4752;
+  border-radius: 4px;
+}
+
+.kss-overview code {
+  border-radius: 4px;
+  padding: .5ch;
+  color: #fff;
+  background-color: #3D4752;
 }
 
 .kss-description code {

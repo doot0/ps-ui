@@ -1925,6 +1925,7 @@ a {
     width: 100%; }
   .c-input-dropdown__arrow {
     fill: currentColor;
+    pointer-events: none;
     position: absolute;
     right: 0.71429em;
     top: 50%;

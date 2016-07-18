@@ -24,6 +24,7 @@
 
   &__arrow {
     fill: currentColor;
+    pointer-events: none;
     position: absolute;
     right: em(10);
     top: 50%;
