@@ -2,6 +2,11 @@
 //
 // Namespace: `a-position`
 //
+// - `--absolute` Positions absolutely
+// - `--fixed` Positions fixed (use with caution)
+// - `--relative` Positions relatively
+// - `--top, --right, --bottom, --left` Applies 0 to the specified direction
+//
 // Markup: _position.html
 //
 // Styleguide: Atomics.position
@@ -17,6 +22,22 @@
 
   &--relative {
     position: relative;
+  }
+
+  &--top {
+    top: 0;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--bottom {
+    bottom: 0;
+  }
+
+  &--right {
+    right: 0;
   }
 
 }
