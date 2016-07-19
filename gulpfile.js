@@ -2,7 +2,8 @@ var gulp        = require('gulp'),
     livereload  = require('gulp-livereload'),
     sass        = require('gulp-sass'),
     connect     = require('gulp-connect'),
-    exec        = require('child_process').exec;
+    exec        = require('child_process').exec,
+    del         = require('del');
 
 var paths = {
   'src' : {
@@ -52,5 +53,12 @@ gulp.task('watch', () => {
 })
 
 gulp.task('build', ['dev'], () => {})
+
+gulp.task('postinstall', () => {
+  return del([
+    './src/_meta',
+    './src/scss/**/*.html'
+  ])
+});
 
 gulp.task('default', ['connect', 'watch'], () => {});
