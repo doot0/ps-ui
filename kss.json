@@ -10,6 +10,7 @@
     "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/xml/xml.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/addon/selection/active-line.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/addon/selection/mark-selection.min.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js",
     "./_meta/_kss-script.js"
   ],
   "title": "Component Library",

@@ -46,7 +46,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   //End CodeMirror
 
+  // Fixes the overview not being rendered...
   if(document.querySelectorAll('.kss-overview').length) {
+
+    var overviewText = '';
+
+    var overview = new XMLHttpRequest();
+
+    overview.open('GET', './_meta/_styleguide-home.md');
+
+    overview.onreadystatechange = function(){
+      overviewText = overview.responseText;
+    }
+
+    overview.onload = function(){
+      var md = new Remarkable('full');
+      var overviewResult = md.render(overviewText);
+      document.querySelectorAll('.kss-overview')[0].innerHTML = overviewResult;
+    }
+
+    overview.send();
 
   }
 
