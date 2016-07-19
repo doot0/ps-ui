@@ -60,7 +60,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     overview.onload = function(){
-      var md = new Remarkable('full');
+      var md = new Remarkable('full', {
+        html: true
+      });
       var overviewResult = md.render(overviewText);
       document.querySelectorAll('.kss-overview')[0].innerHTML = overviewResult;
     }
